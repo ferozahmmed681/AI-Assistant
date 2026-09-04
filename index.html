@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header class="header">
+
+        <div class="logo">
+            <div class="logo-icon">🤖</div>
+
+            <div>
+                <h2>AI Assistant</h2>
+                <span>Smart AI Chat</span>
+            </div>
+        </div>
+
+        <button class="clear-btn" onclick="clearChat()">
+            🗑️
+        </button>
+
+    </header>
+
+
+    <main class="chat" id="chat">
+
+        <div class="welcome" id="welcome">
+
+            <div class="ai-avatar">🤖</div>
+
+            <h1>কীভাবে সাহায্য করতে পারি?</h1>
+
+            <p>
+                যেকোনো প্রশ্ন লিখে AI Assistant-কে জিজ্ঞেস করুন।
+            </p>
+
+            <div class="suggestions">
+
+                <button onclick="useSuggestion('HTML কী?')">
+                    💻 HTML কী?
+                </button>
+
+                <button onclick="useSuggestion('একটি অ্যাপ কীভাবে তৈরি করব?')">
+                    📱 App তৈরি
+                </button>
+
+                <button onclick="useSuggestion('একটি ওয়েবসাইট কীভাবে তৈরি করব?')">
+                    🌐 Website
+                </button>
+
+                <button onclick="useSuggestion('আমাকে একটি YouTube আইডিয়া দাও')">
+                    ▶️ YouTube Idea
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <div class="input-area">
+
+        <div class="input-box">
+
+            <textarea
+                id="messageInput"
+                placeholder="আপনার প্রশ্ন লিখুন..."
+                rows="1">
+            </textarea>
+
+            <button
+                class="send-btn"
+                onclick="sendMessage()">
+                ➤
+            </button>
+
+        </div>
+
+        <div class="info">
+            AI Assistant • Demo Mode
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+          </html>
